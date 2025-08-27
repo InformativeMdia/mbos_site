@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mBOS Pty Ltd – Business Automation</title>
+  <style>
+    :root {
+      --primary: #004aad;
+      --secondary: #0066ff;
+      --light: #f9f9f9;
+      --dark: #222;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", Arial, sans-serif; color: #333; background: var(--light); line-height: 1.6; }
+    header { 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://source.unsplash.com/1600x900/?business,technology") center/cover no-repeat; 
+      color: white; 
+      text-align: center; 
+      padding: 100px 20px; 
+    }
+    header h1 { font-size: 3rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; margin-bottom: 30px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: var(--secondary);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #003580; }
+
+    main { max-width: 1100px; margin: auto; padding: 60px 20px; }
+    section { margin-bottom: 80px; }
+    h2 { text-align: center; margin-bottom: 20px; color: var(--primary); font-size: 2rem; }
+    p.section-intro { text-align: center; margin-bottom: 40px; font-size: 1.1rem; color: #555; }
+
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .card { background: white; border-radius: 12px; padding: 25px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+    .card h3 { margin-bottom: 15px; color: var(--primary); }
+
+    .about { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
+    .about img { flex: 1 1 400px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .about div { flex: 1 1 400px; }
+
+    .contact { text-align: center; }
+    .contact p { margin: 10px 0; font-size: 1.1rem; }
+    .contact a { color: var(--secondary); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    footer { background: var(--dark); color: #bbb; text-align: center; padding: 20px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>micro Business Operating Systems Pty Ltd</h1>
+    <p>mBOS – Business Automation. Simplified.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p class="section-intro">
+        At mBOS, we build digital-first business operating systems for SMEs.
+        Our mission is to simplify operations and help businesses grow through
+        automation, integration, and innovation.
+      </p>
+      <div class="about">
+        <img src="https://source.unsplash.com/600x400/?team,work" alt="About mBOS" />
+        <div>
+          <p>
+            Founded with the vision of empowering businesses in Africa and beyond,
+            mBOS creates lightweight, powerful systems that remove friction from
+            day-to-day operations. Whether it’s integrating WhatsApp for customer
+            engagement, streamlining payments, or automating workflows, we provide
+            solutions designed for real-world impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Solutions</h2>
+      <p class="section-intro">Smart, scalable tools designed to make your business run better.</p>
+      <div class="services">
+        <div class="card">
+          <h3>Automation Tools</h3>
+          <p>Eliminate repetitive tasks and free up time for growth through our automation solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Integration Services</h3>
+          <p>Connect WhatsApp, payments, CRMs, and other tools into a seamless digital ecosystem.</p>
+        </div>
+        <div class="card">
+          <h3>Growth Support</h3>
+          <p>Our systems are built to scale with your business and adapt as your needs evolve.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@mbos.co.za">info@mbos.site</a></p>
+      <p>Location: Johannesburg, South Africa</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 micro Business Operating Systems Pty Ltd. All rights reserved.
+  </footer>
+</body>
+</html>
